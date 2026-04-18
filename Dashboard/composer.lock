@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3c16cb86c42230c6c023d9a5d9bcf42",
+    "content-hash": "bd6328c09c1d0de82518e31b7fa21343",
     "packages": [
         {
             "name": "brick/math",
@@ -1399,16 +1399,16 @@
         },
         {
             "name": "laravel/serializable-closure",
-            "version": "v2.0.11",
+            "version": "v2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/serializable-closure.git",
-                "reference": "d1af40ac4a6ccc12bd062a7184f63c9995a63bdd"
+                "reference": "a6abb4e54f6fcd3138120b9ad497f0bd146f9919"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/d1af40ac4a6ccc12bd062a7184f63c9995a63bdd",
-                "reference": "d1af40ac4a6ccc12bd062a7184f63c9995a63bdd",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/a6abb4e54f6fcd3138120b9ad497f0bd146f9919",
+                "reference": "a6abb4e54f6fcd3138120b9ad497f0bd146f9919",
                 "shasum": ""
             },
             "require": {
@@ -1456,7 +1456,7 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
-            "time": "2026-04-07T13:32:18+00:00"
+            "time": "2026-04-14T13:33:34+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1523,6 +1523,146 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.11.1"
             },
             "time": "2026-02-06T14:12:35+00:00"
+        },
+        {
+            "name": "lcobucci/clock",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/clock.git",
+                "reference": "c7aadcd6fd97ed9e199114269c0be3f335e38876"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/clock/zipball/c7aadcd6fd97ed9e199114269c0be3f335e38876",
+                "reference": "c7aadcd6fd97ed9e199114269c0be3f335e38876",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.1.0 || ~8.2.0",
+                "stella-maris/clock": "^0.1.7"
+            },
+            "provide": {
+                "psr/clock-implementation": "1.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.26",
+                "lcobucci/coding-standard": "^9.0",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan": "^1.9.4",
+                "phpstan/phpstan-deprecation-rules": "^1.1.1",
+                "phpstan/phpstan-phpunit": "^1.3.2",
+                "phpstan/phpstan-strict-rules": "^1.4.4",
+                "phpunit/phpunit": "^9.5.27"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\Clock\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Cobucci",
+                    "email": "lcobucci@gmail.com"
+                }
+            ],
+            "description": "Yet another clock abstraction",
+            "support": {
+                "issues": "https://github.com/lcobucci/clock/issues",
+                "source": "https://github.com/lcobucci/clock/tree/2.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/lcobucci",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lcobucci",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-12-19T14:38:11+00:00"
+        },
+        {
+            "name": "lcobucci/jwt",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/jwt.git",
+                "reference": "55564265fddf810504110bd68ca311932324b0e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/55564265fddf810504110bd68ca311932324b0e9",
+                "reference": "55564265fddf810504110bd68ca311932324b0e9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "lcobucci/clock": "^2.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.20",
+                "lcobucci/coding-standard": "^6.0",
+                "mikey179/vfsstream": "^1.6",
+                "phpbench/phpbench": "^0.17",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
+                "phpunit/php-invoker": "^3.1",
+                "phpunit/phpunit": "^9.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Cobucci",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+            "keywords": [
+                "JWS",
+                "jwt"
+            ],
+            "support": {
+                "issues": "https://github.com/lcobucci/jwt/issues",
+                "source": "https://github.com/lcobucci/jwt/tree/4.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/lcobucci",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lcobucci",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-09-28T19:18:28+00:00"
         },
         {
             "name": "league/commonmark",
@@ -3359,6 +3499,53 @@
             "time": "2025-12-14T04:43:48+00:00"
         },
         {
+            "name": "stella-maris/clock",
+            "version": "0.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stella-maris-solutions/clock.git",
+                "reference": "fa23ce16019289a18bb3446fdecd45befcdd94f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stella-maris-solutions/clock/zipball/fa23ce16019289a18bb3446fdecd45befcdd94f8",
+                "reference": "fa23ce16019289a18bb3446fdecd45befcdd94f8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0|^8.0",
+                "psr/clock": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "StellaMaris\\Clock\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Heigl",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "A pre-release of the proposed PSR-20 Clock-Interface",
+            "homepage": "https://gitlab.com/stella-maris/clock",
+            "keywords": [
+                "clock",
+                "datetime",
+                "point in time",
+                "psr20"
+            ],
+            "support": {
+                "source": "https://github.com/stella-maris-solutions/clock/tree/0.1.7"
+            },
+            "time": "2022-11-25T16:15:06+00:00"
+        },
+        {
             "name": "symfony/clock",
             "version": "v7.4.8",
             "source": {
@@ -4357,7 +4544,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -4416,7 +4603,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4440,7 +4627,7 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
@@ -4498,7 +4685,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4522,7 +4709,7 @@
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
@@ -4585,7 +4772,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4609,7 +4796,7 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -4670,7 +4857,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4694,7 +4881,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -4755,7 +4942,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4779,7 +4966,7 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
@@ -4839,7 +5026,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4863,7 +5050,7 @@
         },
         {
             "name": "symfony/polyfill-php83",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php83.git",
@@ -4919,7 +5106,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php83/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-php83/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4943,7 +5130,7 @@
         },
         {
             "name": "symfony/polyfill-php84",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php84.git",
@@ -4999,7 +5186,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php84/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-php84/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -5023,7 +5210,7 @@
         },
         {
             "name": "symfony/polyfill-php85",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php85.git",
@@ -5079,7 +5266,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php85/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-php85/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -5103,7 +5290,7 @@
         },
         {
             "name": "symfony/polyfill-uuid",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-uuid.git",
@@ -5162,7 +5349,7 @@
                 "uuid"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -5915,6 +6102,84 @@
             "time": "2025-12-02T11:56:42+00:00"
         },
         {
+            "name": "tymon/jwt-auth",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tymondesigns/jwt-auth.git",
+                "reference": "6c70930a92710d97e8e52b182fca2176097f33be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/6c70930a92710d97e8e52b182fca2176097f33be",
+                "reference": "6c70930a92710d97e8e52b182fca2176097f33be",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/contracts": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/http": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/support": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "lcobucci/jwt": "^4.0|^5.0",
+                "nesbot/carbon": "^2.69|^3.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "illuminate/console": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/database": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/routing": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "mockery/mockery": "^1.6",
+                "phpunit/phpunit": "^9.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "JWTAuth": "Tymon\\JWTAuth\\Facades\\JWTAuth",
+                        "JWTFactory": "Tymon\\JWTAuth\\Facades\\JWTFactory"
+                    },
+                    "providers": [
+                        "Tymon\\JWTAuth\\Providers\\LaravelServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-2.x": "2.0-dev",
+                    "dev-develop": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tymon\\JWTAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sean Tymon",
+                    "email": "tymon148@gmail.com",
+                    "homepage": "https://tymon.xyz",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JSON Web Token Authentication for Laravel and Lumen",
+            "homepage": "https://github.com/tymondesigns/jwt-auth",
+            "keywords": [
+                "Authentication",
+                "JSON Web Token",
+                "auth",
+                "jwt",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/tymondesigns/jwt-auth/issues",
+                "source": "https://github.com/tymondesigns/jwt-auth"
+            },
+            "time": "2026-03-06T09:50:45+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.6.3",
             "source": {
@@ -6000,23 +6265,23 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "2.0.3",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "b1d923f88091c6bf09699efcd7c8a1b1bfd7351d"
+                "reference": "d870a33f0f79d2b4579740b0620200221ee44aeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/b1d923f88091c6bf09699efcd7c8a1b1bfd7351d",
-                "reference": "b1d923f88091c6bf09699efcd7c8a1b1bfd7351d",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/d870a33f0f79d2b4579740b0620200221ee44aeb",
+                "reference": "d870a33f0f79d2b4579740b0620200221ee44aeb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": ">=7.1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
+                "phpunit/phpunit": "~8.5 || ~9.6 || ~10.5 || ~11.5"
             },
             "suggest": {
                 "ext-intl": "Use Intl for transliterator_transliterate() support"
@@ -6046,7 +6311,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
-                "source": "https://github.com/voku/portable-ascii/tree/2.0.3"
+                "source": "https://github.com/voku/portable-ascii/tree/2.1.0"
             },
             "funding": [
                 {
@@ -6070,7 +6335,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-21T01:49:47+00:00"
+            "time": "2026-04-16T23:10:39+00:00"
         }
     ],
     "packages-dev": [
@@ -6409,16 +6674,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.56.0",
+            "version": "v1.57.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "f43426bb42a1cb7a51a3861d9138063e54766d28"
+                "reference": "fa8d057b6e9310380ccbc3a209ed7f927d54f648"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/f43426bb42a1cb7a51a3861d9138063e54766d28",
-                "reference": "f43426bb42a1cb7a51a3861d9138063e54766d28",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/fa8d057b6e9310380ccbc3a209ed7f927d54f648",
+                "reference": "fa8d057b6e9310380ccbc3a209ed7f927d54f648",
                 "shasum": ""
             },
             "require": {
@@ -6468,7 +6733,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2026-04-01T15:17:32+00:00"
+            "time": "2026-04-14T13:32:04+00:00"
         },
         {
             "name": "mockery/mockery",
